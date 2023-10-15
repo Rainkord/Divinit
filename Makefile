@@ -3,10 +3,10 @@ CC = gcc
 all: menu clean
 
 
-menu: main.o abs_max.o abs_min.o diff.o sum.o output.o
-	$(CC) main.o abs_max.o abs_min.o diff.o sum.o output.o -o result
-main.o: main.c output.h
-	$(CC) -c main.c
+menu: menu.o abs_max.o abs_min.o diff.o sum.o output.o
+	$(CC) menu.o abs_max.o abs_min.o diff.o sum.o output.o -o result
+menu.o: menu.c output.h
+	$(CC) -c menu.c
 
 abs_max.o: abs_max.c abs_max.h
 	$(CC) -c abs_max.c
