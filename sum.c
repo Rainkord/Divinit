@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include "abs_max.h"
 
 int sum(int arr[], int size)
 {
