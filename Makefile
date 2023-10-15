@@ -1,9 +1,9 @@
 CC = gcc
 
-all: result clean
+all: menu clean
 
 
-result: main.o abs_max.o abs_min.o diff.o sum.o output.o
+menu: main.o abs_max.o abs_min.o diff.o sum.o output.o
 	$(CC) main.o abs_max.o abs_min.o diff.o sum.o output.o -o result
 main.o: main.c output.h
 	$(CC) -c main.c
