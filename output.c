@@ -10,19 +10,19 @@ int output(int f, int arr[], int size)
     switch (f)
     {
     case 0:
-        printf("%d", abs_max(arr, size));
+        printf("%d\n", abs_max(arr, size));
         break;
     case 1:
-        printf("%d", abs_min(arr, size));
+        printf("%d\n", abs_min(arr, size));
         break;
     case 2:
-        printf("%d", diff(arr, size));
+        printf("%d\n", diff(arr, size));
         break;
     case 3:
-        printf("%d", sum(arr, size));
+        printf("%d\n", sum(arr, size));
         break;
     default:
-        printf("Данные некорректны");
+        printf("Данные некорректны\n");
         break;
     }
     return 0;
