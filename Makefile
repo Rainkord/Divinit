@@ -5,7 +5,6 @@ all: result clean
 
 result: main.o abs_max.o abs_min.o diff.o sum.o output.o
 	$(CC) main.o abs_max.o abs_min.o diff.o sum.o output.o -o result
-	./result
 main.o: main.c output.h
 	$(CC) -c main.c
 
