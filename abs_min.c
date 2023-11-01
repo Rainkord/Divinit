@@ -3,13 +3,13 @@
 
 int abs_min(int arr[], int size)
 {
-    int k = arr[0];
+    int result = arr[0];
     for (int i = 0; i < size; i++)
     {
-        if (abs(arr[i]) < abs(k))
+        if (abs(arr[i]) < abs(result))
         {
-            k = arr[i];
+            result = arr[i];
         }
     }
-    return k;
+    return result;
 }

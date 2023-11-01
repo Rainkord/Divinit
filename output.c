@@ -4,22 +4,23 @@
 #include "abs_min.h"
 #include "diff.h"
 #include "sum.h"
+#define OUT "%d\n"
 
-int output(int f, int arr[], int size)
+int output(int first, int arr[], int size)
 {
-    switch (f)
+    switch (first)
     {
     case 0:
-        printf("%d\n", abs_max(arr, size));
+        printf(OUT, abs_max(arr, size));
         break;
     case 1:
-        printf("%d\n", abs_min(arr, size));
+        printf(OUT, abs_min(arr, size));
         break;
     case 2:
-        printf("%d\n", diff(arr, size));
+        printf(OUT, diff(arr, size));
         break;
     case 3:
-        printf("%d\n", sum(arr, size));
+        printf(OUT, sum(arr, size));
         break;
     default:
         printf("Данные некорректны\n");
